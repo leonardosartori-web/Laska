@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['ped_5ft_43',['ped_t',['../laska_8h.html#a9ab3eaadbff1245731adcc445a96a384',1,'laska.h']]],
+  ['pedina_44',['pedina',['../structpedina.html',1,'']]],
+  ['pos_5fx_45',['pos_x',['../structcoord.html#a5f483e9917a47f565955e833ecf89170',1,'coord']]],
+  ['pos_5fy_46',['pos_y',['../structcoord.html#a5f95581d411577d1c9d71b82ee10bf72',1,'coord']]],
+  ['posizionamento_5finiziale_47',['posizionamento_iniziale',['../laska_8c.html#ab4e7d8acf9ec73a914db39e55096906d',1,'posizionamento_iniziale(char(*chessboard)[N_ELEMENT], ped_t *squadra1, ped_t *squadra2):&#160;laska.c'],['../laska_8h.html#ab4e7d8acf9ec73a914db39e55096906d',1,'posizionamento_iniziale(char(*chessboard)[N_ELEMENT], ped_t *squadra1, ped_t *squadra2):&#160;laska.c']]],
+  ['posizione_48',['posizione',['../structpedina.html#a537485df9a4c6600e951f48cca013aef',1,'pedina']]],
+  ['presentazione_5fmenu_49',['presentazione_menu',['../laska_8c.html#a6a5a8eaa5e8280397e16152e01e3eb18',1,'presentazione_menu(short int offset_o, short int offset_v, short int *gioco):&#160;laska.c'],['../laska_8h.html#a6a5a8eaa5e8280397e16152e01e3eb18',1,'presentazione_menu(short int offset_o, short int offset_v, short int *gioco):&#160;laska.c']]],
+  ['prima_5fultima_5friga_50',['prima_ultima_riga',['../laska_8c.html#ab37ee89a0783963e7222d5bd093d7aca',1,'prima_ultima_riga(short int len):&#160;laska.c'],['../laska_8h.html#ab37ee89a0783963e7222d5bd093d7aca',1,'prima_ultima_riga(short int len):&#160;laska.c']]],
+  ['print_5fdatabase_51',['print_database',['../laska_8c.html#a01e425d0bab15008ba820add4ba48d70',1,'print_database(ped_t *squadra, short int pedina, short int non_disponibili, short int offset_o, bool mangia):&#160;laska.c'],['../laska_8h.html#a01e425d0bab15008ba820add4ba48d70',1,'print_database(ped_t *squadra, short int pedina, short int non_disponibili, short int offset_o, bool mangia):&#160;laska.c']]],
+  ['print_5fposizioni_5fpedine_52',['print_posizioni_pedine',['../laska_8c.html#a813dc12de9535f12036c0a70500ae94f',1,'print_posizioni_pedine(ped_t *squadra):&#160;laska.c'],['../laska_8h.html#a813dc12de9535f12036c0a70500ae94f',1,'print_posizioni_pedine(ped_t *squadra):&#160;laska.c']]],
+  ['printer_5fche_53',['printer_che',['../laska_8c.html#ab512f532a1f0edce2a9d32463144bc3c',1,'printer_che(char(*chessboard)[N_ELEMENT], short int row, short int col, short int length, short int offset_v, short int offset_o, short int c1, short int c2, short int znl):&#160;laska.c'],['../laska_8h.html#ab512f532a1f0edce2a9d32463144bc3c',1,'printer_che(char(*chessboard)[N_ELEMENT], short int row, short int col, short int length, short int offset_v, short int offset_o, short int c1, short int c2, short int znl):&#160;laska.c']]],
+  ['printer_5fcolor_54',['printer_color',['../laska_8c.html#a2f393d55b95a71a841325a617594a85d',1,'printer_color(char *string, short int color):&#160;laska.c'],['../laska_8h.html#a2f393d55b95a71a841325a617594a85d',1,'printer_color(char *string, short int color):&#160;laska.c']]],
+  ['promossa_55',['promossa',['../laska_8c.html#af9cf609c7375465658073feeb96a7940',1,'promossa(char(*chessboard)[N_ELEMENT], ped_t *squadra, const char *turno, short int mossa_y, short int mossa_x):&#160;laska.c'],['../laska_8h.html#af9cf609c7375465658073feeb96a7940',1,'promossa(char(*chessboard)[N_ELEMENT], ped_t *squadra, const char *turno, short int mossa_y, short int mossa_x):&#160;laska.c']]],
+  ['promozione_56',['promozione',['../structpedina.html#ab0a5fa4ee2fba0948c6e79e6670ced65',1,'pedina']]]
+];

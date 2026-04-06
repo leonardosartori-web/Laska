@@ -1,0 +1,1889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>miniLaska: Documentation</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="Foto_gioco.ico" type="image/x-icon" />
+</head>
+<!-- Generato da Doxygen 1.9.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Strutture dati</a> &#124;
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#typedef-members">Ridefinizioni di tipo (typedef)</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file laska.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Descrizioni delle funzioni utilizzate per costruire il gioco miniLaska.  
+<a href="#details">Continua...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+</div>
+<p><a href="laska_8h_source.html">Vai al codice sorgente di questo file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Strutture dati</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcoord.html">coord</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmossa__con__tipo.html">mossa_con_tipo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpedina.html">pedina</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:a8c48e9b2d297ea860974ce973afc2bff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a8c48e9b2d297ea860974ce973afc2bff">N_ELEMENT</a>&#160;&#160;&#160;(7)</td></tr>
+<tr class="separator:a8c48e9b2d297ea860974ce973afc2bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b49c662c073f89e86804f7856622a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a05b49c662c073f89e86804f7856622a0">LEN</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:a05b49c662c073f89e86804f7856622a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Ridefinizioni di tipo (typedef)</h2></td></tr>
+<tr class="memitem:a0b1b32728682649459c7d864cd8fc5f3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structcoord.html">coord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a></td></tr>
+<tr class="separator:a0b1b32728682649459c7d864cd8fc5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7248961b40206a3b09c201ae3cd3236b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmossa__con__tipo.html">mossa_con_tipo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a7248961b40206a3b09c201ae3cd3236b">mossa_con_tipo_t</a></td></tr>
+<tr class="separator:a7248961b40206a3b09c201ae3cd3236b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab3eaadbff1245731adcc445a96a384"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structpedina.html">pedina</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a></td></tr>
+<tr class="separator:a9ab3eaadbff1245731adcc445a96a384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ad101feaf0f05c57e7dad70fcd49f888c"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#ad101feaf0f05c57e7dad70fcd49f888c">controllo_risposta</a> (short int n_risposte, short int risposta)</td></tr>
+<tr class="separator:ad101feaf0f05c57e7dad70fcd49f888c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd002fccfffd08565afa80058a29016f"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#afd002fccfffd08565afa80058a29016f">dimmi_riga</a> (short int y, short int sottocasella)</td></tr>
+<tr class="separator:afd002fccfffd08565afa80058a29016f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54b7e9cf01fe8ffc49c31115e0f8dd9"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#af54b7e9cf01fe8ffc49c31115e0f8dd9">differenza_tra_char</a> (char a, char b)</td></tr>
+<tr class="separator:af54b7e9cf01fe8ffc49c31115e0f8dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa7fb5e6b2efe8298c47eaf55517d1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a6fa7fb5e6b2efe8298c47eaf55517d1b">offset_verticale_f</a> (short int len)</td></tr>
+<tr class="separator:a6fa7fb5e6b2efe8298c47eaf55517d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee043fc585add62bb82242ecdda6ff9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#aee043fc585add62bb82242ecdda6ff9c">offset_orizzontale_f</a> (short int len)</td></tr>
+<tr class="separator:aee043fc585add62bb82242ecdda6ff9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37ee89a0783963e7222d5bd093d7aca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#ab37ee89a0783963e7222d5bd093d7aca">prima_ultima_riga</a> (short int len)</td></tr>
+<tr class="separator:ab37ee89a0783963e7222d5bd093d7aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af857f5ae71f2377599fe8e4feb270c4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#af857f5ae71f2377599fe8e4feb270c4c">riga_vuota</a> (short int len)</td></tr>
+<tr class="separator:af857f5ae71f2377599fe8e4feb270c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5a8eaa5e8280397e16152e01e3eb18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a6a5a8eaa5e8280397e16152e01e3eb18">presentazione_menu</a> (short int offset_o, short int offset_v, short int *gioco)</td></tr>
+<tr class="separator:a6a5a8eaa5e8280397e16152e01e3eb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e7d8acf9ec73a914db39e55096906d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#ab4e7d8acf9ec73a914db39e55096906d">posizionamento_iniziale</a> (char(*chessboard)[<a class="el" href="laska_8h.html#a8c48e9b2d297ea860974ce973afc2bff">N_ELEMENT</a>], <a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra1, <a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra2)</td></tr>
+<tr class="separator:ab4e7d8acf9ec73a914db39e55096906d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef9aab38451e405afd79c33cd426293"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a3ef9aab38451e405afd79c33cd426293">dimmi_come_si_chiama</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra, short int casella_y, short int casella_x, short int sottocasella)</td></tr>
+<tr class="separator:a3ef9aab38451e405afd79c33cd426293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164504ec06af49c182bb1603e13b649e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a164504ec06af49c182bb1603e13b649e">come_si_gioca</a> (short int offset_o, short int offset_v, short int *gioco)</td></tr>
+<tr class="separator:a164504ec06af49c182bb1603e13b649e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a4b2674b555ea426ec6d80f159a085"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a79a4b2674b555ea426ec6d80f159a085">calcola_n_pedine</a> (short int n)</td></tr>
+<tr class="separator:a79a4b2674b555ea426ec6d80f159a085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f393d55b95a71a841325a617594a85d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a2f393d55b95a71a841325a617594a85d">printer_color</a> (char *string, short int color)</td></tr>
+<tr class="separator:a2f393d55b95a71a841325a617594a85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab512f532a1f0edce2a9d32463144bc3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#ab512f532a1f0edce2a9d32463144bc3c">printer_che</a> (char(*chessboard)[<a class="el" href="laska_8h.html#a8c48e9b2d297ea860974ce973afc2bff">N_ELEMENT</a>], short int row, short int col, short int length, short int offset_v, short int offset_o, short int c1, short int c2, short int znl)</td></tr>
+<tr class="separator:ab512f532a1f0edce2a9d32463144bc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c269ecd57bec5b29bad62867264c2b"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#ab3c269ecd57bec5b29bad62867264c2b">verified_ped</a> (char(*chessboard)[<a class="el" href="laska_8h.html#a8c48e9b2d297ea860974ce973afc2bff">N_ELEMENT</a>], <a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a> <a class="el" href="structpedina.html">pedina</a>, const char *turno)</td></tr>
+<tr class="separator:ab3c269ecd57bec5b29bad62867264c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3193436d1464dff3c91e8c604c2611b3"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a3193436d1464dff3c91e8c604c2611b3">mossa_type</a> (short int pedina_y, short int pedina_x, short int mossa_y, short int mossa_x)</td></tr>
+<tr class="separator:a3193436d1464dff3c91e8c604c2611b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450e37c9e4098c264dd651395c65b594"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a450e37c9e4098c264dd651395c65b594">verso</a> (short int pedina_y, short int mossa_y)</td></tr>
+<tr class="separator:a450e37c9e4098c264dd651395c65b594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e5c18e79d80b611c409266b330a91a"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#ac9e5c18e79d80b611c409266b330a91a">coordinata_media</a> (short int <a class="el" href="structpedina.html">pedina</a>, short int mossa)</td></tr>
+<tr class="separator:ac9e5c18e79d80b611c409266b330a91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fdc4c889994b7a417264339dcd082c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a2fdc4c889994b7a417264339dcd082c0">modifica_pos_y_e_pos_x</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra_a, short int casella_y, short int casella_x, short int casella_pedina_y, short int casella_pedina_x, short int sottocasella_pedina, short int sottocasella_mossa)</td></tr>
+<tr class="separator:a2fdc4c889994b7a417264339dcd082c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f45786a41b79a570b4da0cfc0de615a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a8f45786a41b79a570b4da0cfc0de615a">dimmi_turno_opposto</a> (const char *turno)</td></tr>
+<tr class="separator:a8f45786a41b79a570b4da0cfc0de615a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeffbd1c609e9c0143eda0dbecd804d1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#aeffbd1c609e9c0143eda0dbecd804d1b">modifica_colore_chessboard</a> (char(*chessboard)[<a class="el" href="laska_8h.html#a8c48e9b2d297ea860974ce973afc2bff">N_ELEMENT</a>], <a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra, short int casella_y, short int casella_x, short int sottocasella, const char *turno)</td></tr>
+<tr class="separator:aeffbd1c609e9c0143eda0dbecd804d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cf609c7375465658073feeb96a7940"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#af9cf609c7375465658073feeb96a7940">promossa</a> (char(*chessboard)[<a class="el" href="laska_8h.html#a8c48e9b2d297ea860974ce973afc2bff">N_ELEMENT</a>], <a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra, const char *turno, short int mossa_y, short int mossa_x)</td></tr>
+<tr class="separator:af9cf609c7375465658073feeb96a7940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ef274bff0ae73eecef60351e8d4f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a00ef274bff0ae73eecef60351e8d4f2b">mossa_f</a> (char(*chessboard)[<a class="el" href="laska_8h.html#a8c48e9b2d297ea860974ce973afc2bff">N_ELEMENT</a>], <a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a> mossa, <a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a> <a class="el" href="structpedina.html">pedina</a>, char *turno, const char *turno_opposto, <a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra_turno, <a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra_opposta, short int <a class="el" href="laska_8h.html#a3193436d1464dff3c91e8c604c2611b3">mossa_type</a>)</td></tr>
+<tr class="separator:a00ef274bff0ae73eecef60351e8d4f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a813dc12de9535f12036c0a70500ae94f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a813dc12de9535f12036c0a70500ae94f">print_posizioni_pedine</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra)</td></tr>
+<tr class="separator:a813dc12de9535f12036c0a70500ae94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d29480cc64346cbde7d9c4ca5fb549"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a73d29480cc64346cbde7d9c4ca5fb549">calcola_mosse_totali</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra, short int mangia)</td></tr>
+<tr class="separator:a73d29480cc64346cbde7d9c4ca5fb549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea4b2153b5200bfd91fc9b8e96b9373"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a6ea4b2153b5200bfd91fc9b8e96b9373">correct</a> (char(*chessboard)[<a class="el" href="laska_8h.html#a8c48e9b2d297ea860974ce973afc2bff">N_ELEMENT</a>], <a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *<a class="el" href="structpedina.html">pedina</a>, <a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a> mossa, const char *turno)</td></tr>
+<tr class="separator:a6ea4b2153b5200bfd91fc9b8e96b9373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ddd9e1810ccfd6536ce8df130eb8258"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a9ddd9e1810ccfd6536ce8df130eb8258">verifica_fine_gioco</a> (short int a, short int b)</td></tr>
+<tr class="separator:a9ddd9e1810ccfd6536ce8df130eb8258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa486d7983876dee87f8be6050210e1b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#aa486d7983876dee87f8be6050210e1b8">verifica_mosse_possibili</a> (char(*chessboard)[<a class="el" href="laska_8h.html#a8c48e9b2d297ea860974ce973afc2bff">N_ELEMENT</a>], <a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra, short int <a class="el" href="structpedina.html">pedina</a>, const char *turno)</td></tr>
+<tr class="separator:aa486d7983876dee87f8be6050210e1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e425d0bab15008ba820add4ba48d70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a01e425d0bab15008ba820add4ba48d70">print_database</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra, short int <a class="el" href="structpedina.html">pedina</a>, short int non_disponibili, short int offset_o, bool mangia)</td></tr>
+<tr class="separator:a01e425d0bab15008ba820add4ba48d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d6ea9ac33c0e0eddc97b91467b0009"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#ad9d6ea9ac33c0e0eddc97b91467b0009">strategia</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra, short int <a class="el" href="structpedina.html">pedina</a>)</td></tr>
+<tr class="separator:ad9d6ea9ac33c0e0eddc97b91467b0009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef5ed0886cd3f9464fe4d794f5eb145"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a0ef5ed0886cd3f9464fe4d794f5eb145">calcola_score_pedina</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra, short int <a class="el" href="structpedina.html">pedina</a>)</td></tr>
+<tr class="separator:a0ef5ed0886cd3f9464fe4d794f5eb145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc90033746b73a0ec217702f885aa81"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#addc90033746b73a0ec217702f885aa81">ha_mosse_mangia</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra)</td></tr>
+<tr class="separator:addc90033746b73a0ec217702f885aa81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b5b6290a618bc268fb801017746fa0"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a15b5b6290a618bc268fb801017746fa0">calcola_priorita_pedina</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra, short int *ultima_pedina)</td></tr>
+<tr class="separator:a15b5b6290a618bc268fb801017746fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932ec4085355d415e6653ac25fabc273"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a932ec4085355d415e6653ac25fabc273">frase</a> (short int offset_o)</td></tr>
+<tr class="separator:a932ec4085355d415e6653ac25fabc273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfdfde58d6b31c48a01c50c30b854a9"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#addfdfde58d6b31c48a01c50c30b854a9">tipo_gioco</a> (short int offset_o)</td></tr>
+<tr class="separator:addfdfde58d6b31c48a01c50c30b854a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab955d76e013f57b4217045bb1d70bed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#aab955d76e013f57b4217045bb1d70bed">scegli_colore</a> (short int *color, short int offset_o)</td></tr>
+<tr class="separator:aab955d76e013f57b4217045bb1d70bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a34221d71cdc6253edb29b841d265d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a92a34221d71cdc6253edb29b841d265d">scegli_impostazioni</a> (short int *s1_color, short int *s2_color, short int *len, short int offset_o)</td></tr>
+<tr class="separator:a92a34221d71cdc6253edb29b841d265d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50fb00f99899bbcea042226182192f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a50fb00f99899bbcea042226182192f66">elimina_squadra</a> (<a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *squadra)</td></tr>
+<tr class="separator:a50fb00f99899bbcea042226182192f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:ad7ef93b79eab76769d5689c50f2d0d65"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#ad7ef93b79eab76769d5689c50f2d0d65">EMPTY</a></td></tr>
+<tr class="separator:ad7ef93b79eab76769d5689c50f2d0d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86a3bc7193a0b4b19151fb15b9b8e5f"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#ae86a3bc7193a0b4b19151fb15b9b8e5f">OUTCAST</a></td></tr>
+<tr class="separator:ae86a3bc7193a0b4b19151fb15b9b8e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f296bdce4aa372c96bd6c13c115b013"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a7f296bdce4aa372c96bd6c13c115b013">up</a> [2]</td></tr>
+<tr class="separator:a7f296bdce4aa372c96bd6c13c115b013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e332dad3a120577254a2bd387c0cae4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a9e332dad3a120577254a2bd387c0cae4">down</a> [2]</td></tr>
+<tr class="separator:a9e332dad3a120577254a2bd387c0cae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a8e01adeded40ada5ec6e876efb3a8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a23a8e01adeded40ada5ec6e876efb3a8">Frase</a> [5]</td></tr>
+<tr class="separator:a23a8e01adeded40ada5ec6e876efb3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b50f50f22c52966760db7ab5af1258d"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="laska_8h.html#a3b50f50f22c52966760db7ab5af1258d">mosse</a> [4]</td></tr>
+<tr class="separator:a3b50f50f22c52966760db7ab5af1258d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<div class="textblock"><p>Descrizioni delle funzioni utilizzate per costruire il gioco miniLaska. </p>
+<dl class="section author"><dt>Autori</dt><dd>Leonardo Sartori, Mattia Dei Rossi, Agostino Calabrò </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>19 Gen 2021</dd></dl>
+<dl class="section see"><dt>Si veda anche</dt><dd>index.html </dd></dl>
+</div><h2 class="groupheader">Documentazione delle definizioni</h2>
+<a id="a05b49c662c073f89e86804f7856622a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b49c662c073f89e86804f7856622a0">&#9670;&nbsp;</a></span>LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEN&#160;&#160;&#160;(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dimensione standard di visualizzazione della casella </p>
+
+</div>
+</div>
+<a id="a8c48e9b2d297ea860974ce973afc2bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c48e9b2d297ea860974ce973afc2bff">&#9670;&nbsp;</a></span>N_ELEMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define N_ELEMENT&#160;&#160;&#160;(7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dimensioni effettive della scacchiera </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle ridefinizioni di tipo (typedef)</h2>
+<a id="a0b1b32728682649459c7d864cd8fc5f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1b32728682649459c7d864cd8fc5f3">&#9670;&nbsp;</a></span>coord_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structcoord.html">coord</a> <a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Coordinate x,y </p>
+
+</div>
+</div>
+<a id="a7248961b40206a3b09c201ae3cd3236b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7248961b40206a3b09c201ae3cd3236b">&#9670;&nbsp;</a></span>mossa_con_tipo_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmossa__con__tipo.html">mossa_con_tipo</a> <a class="el" href="laska_8h.html#a7248961b40206a3b09c201ae3cd3236b">mossa_con_tipo_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mossa e relativo tipo </p>
+
+</div>
+</div>
+<a id="a9ab3eaadbff1245731adcc445a96a384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab3eaadbff1245731adcc445a96a384">&#9670;&nbsp;</a></span>ped_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structpedina.html">pedina</a> <a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pedina </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a id="a73d29480cc64346cbde7d9c4ca5fb549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d29480cc64346cbde7d9c4ca5fb549">&#9670;&nbsp;</a></span>calcola_mosse_totali()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int calcola_mosse_totali </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>mangia</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione che calcola le mosse possibili di una squadra </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra</td><td>- Puntatore all'array della squadra </td></tr>
+    <tr><td class="paramname">mangia</td><td>- 1 somma le mosse che mangiano, 0 altrimenti </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Somma delle mosse </dd></dl>
+
+</div>
+</div>
+<a id="a79a4b2674b555ea426ec6d80f159a085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79a4b2674b555ea426ec6d80f159a085">&#9670;&nbsp;</a></span>calcola_n_pedine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int calcola_n_pedine </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ritorna il numero di pedine del gioco </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>- N_colonne </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Numero di pedine che servono ad una squadra </dd></dl>
+
+</div>
+</div>
+<a id="a15b5b6290a618bc268fb801017746fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b5b6290a618bc268fb801017746fa0">&#9670;&nbsp;</a></span>calcola_priorita_pedina()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int calcola_priorita_pedina </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int *&#160;</td>
+          <td class="paramname"><em>ultima_pedina</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione scorre l'array di pedine di una squadra e cerca la pedina con lo score migliore, esclusa l'ultima pedina utilizzata </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra</td><td>- Puntatore all'array della squadra. </td></tr>
+    <tr><td class="paramname">ultima_pedina</td><td>- Puntatore all'ultima pedina utilizzata da quella squadra </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Restituisce una i pedina di una squadra </dd></dl>
+
+</div>
+</div>
+<a id="a0ef5ed0886cd3f9464fe4d794f5eb145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef5ed0886cd3f9464fe4d794f5eb145">&#9670;&nbsp;</a></span>calcola_score_pedina()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int calcola_score_pedina </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>pedina</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione calcola lo score di una pedina in base alla posizione e il numero di mosse possibili della pedina. </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra</td><td>- Puntatore all'array della squadra. </td></tr>
+    <tr><td class="paramname">pedina</td><td>- Pedina i-esima dell'array squadra </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Ritorna lo score della pedina </dd></dl>
+
+</div>
+</div>
+<a id="a164504ec06af49c182bb1603e13b649e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164504ec06af49c182bb1603e13b649e">&#9670;&nbsp;</a></span>come_si_gioca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void come_si_gioca </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int *&#160;</td>
+          <td class="paramname"><em>gioco</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stapa guida </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ffset_o</td><td>- Offset orizzontale </td></tr>
+    <tr><td class="paramname">offset_v</td><td>- Offset verticale </td></tr>
+    <tr><td class="paramname">gioco</td><td>- Tipo di gioco </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad101feaf0f05c57e7dad70fcd49f888c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad101feaf0f05c57e7dad70fcd49f888c">&#9670;&nbsp;</a></span>controllo_risposta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int controllo_risposta </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>n_risposte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>risposta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Controlla se il numero "risposta" è corretto o meno </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n_risposte</td><td>- Risposte massime possibili </td></tr>
+    <tr><td class="paramname">risposta</td><td>- Risposta data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- True se 0 &lt;= risposta &lt; n_risposte </dd></dl>
+
+</div>
+</div>
+<a id="ac9e5c18e79d80b611c409266b330a91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e5c18e79d80b611c409266b330a91a">&#9670;&nbsp;</a></span>coordinata_media()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int coordinata_media </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>pedina</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>mossa</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>indica le coordinate della casella media fra due date in input </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pedina</td><td>- Coordinate della pedina </td></tr>
+    <tr><td class="paramname">mossa</td><td>- Coordinate della mossa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Casella media </dd></dl>
+
+</div>
+</div>
+<a id="a6ea4b2153b5200bfd91fc9b8e96b9373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea4b2153b5200bfd91fc9b8e96b9373">&#9670;&nbsp;</a></span>correct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool correct </td>
+          <td>(</td>
+          <td class="paramtype">char(*)&#160;</td>
+          <td class="paramname"><em>chessboard</em>[N_ELEMENT], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>pedina</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a>&#160;</td>
+          <td class="paramname"><em>mossa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>turno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Controlla se la pedina può effettuare la mossa scelta </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboard</td><td>- Puntatore all'array bi-dimensionale della scacchiera </td></tr>
+    <tr><td class="paramname">pedina</td><td>- Puntatore ad una determinata Struct pedina </td></tr>
+    <tr><td class="paramname">mossa</td><td>- Coordinate di destinazione della pedina </td></tr>
+    <tr><td class="paramname">turno</td><td>- Puntatore all'array turno </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- True se la pedina può effettuare la mossa, False altrimenti </dd></dl>
+
+</div>
+</div>
+<a id="af54b7e9cf01fe8ffc49c31115e0f8dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54b7e9cf01fe8ffc49c31115e0f8dd9">&#9670;&nbsp;</a></span>differenza_tra_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int differenza_tra_char </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Restituisce la quantità (numerica) tra due char </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>- Char </td></tr>
+    <tr><td class="paramname">b</td><td>- Char </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Differenza in short int tra i due char </dd></dl>
+
+</div>
+</div>
+<a id="a3ef9aab38451e405afd79c33cd426293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef9aab38451e405afd79c33cd426293">&#9670;&nbsp;</a></span>dimmi_come_si_chiama()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int dimmi_come_si_chiama </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>casella_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>casella_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>sottocasella</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Restituisci l'indice della pedina nella squadra </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra</td><td>- Array di pedine </td></tr>
+    <tr><td class="paramname">casella_y</td><td>- Coordinata y della casella </td></tr>
+    <tr><td class="paramname">casella_x</td><td>- Coordinata x della casella </td></tr>
+    <tr><td class="paramname">sottocasella</td><td>- Sottocasella relativa alla pedina indicata (posizione nella torre di pedine) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Indice della pedina nella squadra </dd></dl>
+
+</div>
+</div>
+<a id="afd002fccfffd08565afa80058a29016f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd002fccfffd08565afa80058a29016f">&#9670;&nbsp;</a></span>dimmi_riga()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int dimmi_riga </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>sottocasella</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Restituisce la riga corrispondente alla sottocasella della coordinata y della pedina selezionata </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>- Coordinata della pedina y </td></tr>
+    <tr><td class="paramname">sottocasella</td><td>- Sottocasella della pedina </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Riga corrispondente </dd></dl>
+
+</div>
+</div>
+<a id="a8f45786a41b79a570b4da0cfc0de615a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f45786a41b79a570b4da0cfc0de615a">&#9670;&nbsp;</a></span>dimmi_turno_opposto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* dimmi_turno_opposto </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>turno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dato il turno di un giocatore, ritorna quello opposto </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">turno</td><td>- Giocatore attuale </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Turno prossimo giocatore </dd></dl>
+
+</div>
+</div>
+<a id="a50fb00f99899bbcea042226182192f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50fb00f99899bbcea042226182192f66">&#9670;&nbsp;</a></span>elimina_squadra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elimina_squadra </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione elimina dalla memoria la squadra presa come parametro </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra</td><td>- Puntatore all'array della squadra. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a932ec4085355d415e6653ac25fabc273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932ec4085355d415e6653ac25fabc273">&#9670;&nbsp;</a></span>frase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frase </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione stampa una frase casuale dall'array globale di frasi </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset_o</td><td>- Offset orizziontale di stampa </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="addc90033746b73a0ec217702f885aa81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc90033746b73a0ec217702f885aa81">&#9670;&nbsp;</a></span>ha_mosse_mangia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int ha_mosse_mangia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione controlla la possibilità di mossa di una squadra </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra</td><td>- Puntatore all'array della squadra. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Restituisce 1 o 0 </dd></dl>
+
+</div>
+</div>
+<a id="aeffbd1c609e9c0143eda0dbecd804d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeffbd1c609e9c0143eda0dbecd804d1b">&#9670;&nbsp;</a></span>modifica_colore_chessboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modifica_colore_chessboard </td>
+          <td>(</td>
+          <td class="paramtype">char(*)&#160;</td>
+          <td class="paramname"><em>chessboard</em>[N_ELEMENT], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>casella_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>casella_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>sottocasella</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>turno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione ausiliaria che va a modificare il colore della squadra nella scacchiera </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboard</td><td>- Puntatore all'array bi-dimensionale della scacchiera </td></tr>
+    <tr><td class="paramname">squadra</td><td>- Lista delle pedine della squadra </td></tr>
+    <tr><td class="paramname">casella_y</td><td>- Coordinata y della casella </td></tr>
+    <tr><td class="paramname">casella_x</td><td>- Coordinata x della casella </td></tr>
+    <tr><td class="paramname">sottocasella</td><td>- Altezza della casella </td></tr>
+    <tr><td class="paramname">turno</td><td>- Turno attuale </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2fdc4c889994b7a417264339dcd082c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fdc4c889994b7a417264339dcd082c0">&#9670;&nbsp;</a></span>modifica_pos_y_e_pos_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modifica_pos_y_e_pos_x </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>casella_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>casella_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>casella_pedina_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>casella_pedina_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>sottocasella_pedina</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>sottocasella_mossa</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>funzione ausiliaria che modifica le coordinate di una precisa pedina data la sua posizione </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra_a</td><td>- Squadra a cui appartiene la pedina </td></tr>
+    <tr><td class="paramname">casella_y</td><td>- Posizione di destinazione </td></tr>
+    <tr><td class="paramname">casella_x</td><td>- Posizione di destinazione </td></tr>
+    <tr><td class="paramname">casella_pedina_y</td><td>- Posizione di partenza </td></tr>
+    <tr><td class="paramname">casella_pedina_x</td><td>- Posizione di partenza </td></tr>
+    <tr><td class="paramname">sottocasella_pedina</td><td>- Sottocasella di partenza </td></tr>
+    <tr><td class="paramname">sottocasella_mossa</td><td>- Sottocasella di destinazione </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00ef274bff0ae73eecef60351e8d4f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00ef274bff0ae73eecef60351e8d4f2b">&#9670;&nbsp;</a></span>mossa_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mossa_f </td>
+          <td>(</td>
+          <td class="paramtype">char(*)&#160;</td>
+          <td class="paramname"><em>chessboard</em>[N_ELEMENT], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a>&#160;</td>
+          <td class="paramname"><em>mossa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a>&#160;</td>
+          <td class="paramname"><em>pedina</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>turno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>turno_opposto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra_turno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra_opposta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>mossa_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cerca, modifica colore in chessboard, conquista e spostamento posizione di una pedina </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboard</td><td>- Puntatore all'array bi-dimensionale della scacchiera </td></tr>
+    <tr><td class="paramname">mossa</td><td>- Coordinate destinazione </td></tr>
+    <tr><td class="paramname">pedina</td><td>- Coordinate pedina da muovere </td></tr>
+    <tr><td class="paramname">turno</td><td>- Turno attuale </td></tr>
+    <tr><td class="paramname">turno_opposto</td><td>- Prossimo turno </td></tr>
+    <tr><td class="paramname">squadra_turno</td><td>- Squadra del turno attuale </td></tr>
+    <tr><td class="paramname">squadra_opposta</td><td>- Squadra del prossimo turno </td></tr>
+    <tr><td class="paramname">mossa_type</td><td>- Tipo di mossa eseguita </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3193436d1464dff3c91e8c604c2611b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3193436d1464dff3c91e8c604c2611b3">&#9670;&nbsp;</a></span>mossa_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int mossa_type </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>pedina_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>pedina_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>mossa_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>mossa_x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indica il tipo di mossa che sta per essere eseguita </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pedina_y</td><td>- Coordinata y della pedina </td></tr>
+    <tr><td class="paramname">pedina_x</td><td>- Coordinata x della pedina </td></tr>
+    <tr><td class="paramname">mossa_y</td><td>- Coordinata y della mossa </td></tr>
+    <tr><td class="paramname">mossa_x</td><td>- Coordinate x della mossa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Near, mangia, zero, altrimenti verifica se mossa non valida </dd></dl>
+
+</div>
+</div>
+<a id="aee043fc585add62bb82242ecdda6ff9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee043fc585add62bb82242ecdda6ff9c">&#9670;&nbsp;</a></span>offset_orizzontale_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void offset_orizzontale_f </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scrive tanti caratteri vuoti quanti "len" in orizzontale </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">len</td><td>- Numero di caratteri vuoti </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6fa7fb5e6b2efe8298c47eaf55517d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa7fb5e6b2efe8298c47eaf55517d1b">&#9670;&nbsp;</a></span>offset_verticale_f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void offset_verticale_f </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scrive tanti caratteri vuoti quanti "len" in verticale </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">len</td><td>- Numero di caratteri vuoti </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab4e7d8acf9ec73a914db39e55096906d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e7d8acf9ec73a914db39e55096906d">&#9670;&nbsp;</a></span>posizionamento_iniziale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void posizionamento_iniziale </td>
+          <td>(</td>
+          <td class="paramtype">char(*)&#160;</td>
+          <td class="paramname"><em>chessboard</em>[N_ELEMENT], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Posizionamento iniziale delle due squadre sulla scacchiera </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboard</td><td>- Scacchiera, array bidimensionale ( matrice) </td></tr>
+    <tr><td class="paramname">squadra1</td><td>- Array di pedine </td></tr>
+    <tr><td class="paramname">squadra2</td><td>- Array di pedine </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a5a8eaa5e8280397e16152e01e3eb18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5a8eaa5e8280397e16152e01e3eb18">&#9670;&nbsp;</a></span>presentazione_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void presentazione_menu </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int *&#160;</td>
+          <td class="paramname"><em>gioco</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Presentazione del menù </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset_o</td><td>- Offset orizzontale </td></tr>
+    <tr><td class="paramname">offset_v</td><td>- Offset verticale </td></tr>
+    <tr><td class="paramname">gioco</td><td>- Tipo di gioco </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab37ee89a0783963e7222d5bd093d7aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37ee89a0783963e7222d5bd093d7aca">&#9670;&nbsp;</a></span>prima_ultima_riga()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void prima_ultima_riga </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scrive una la prima o l'ultima riga vuota </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">len</td><td>- Numero di caratteri vuoti </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01e425d0bab15008ba820add4ba48d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e425d0bab15008ba820add4ba48d70">&#9670;&nbsp;</a></span>print_database()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_database </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>pedina</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>non_disponibili</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>mangia</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione stampa le mosse possibili e il tipo di mossa di una pedina </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra</td><td>- Puntatore all'array della squadra. </td></tr>
+    <tr><td class="paramname">pedina</td><td>- Pedina i-esima dell'array squadra </td></tr>
+    <tr><td class="paramname">non_disponibili</td><td>- Consente di visualizzare anche le mosse non legali </td></tr>
+    <tr><td class="paramname">offset_o</td><td>- Offset orizziontale di stampa </td></tr>
+    <tr><td class="paramname">mangia</td><td>- 1 se la squadra ha pedine che possono conquistare pedine, 0 altrimenti </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a813dc12de9535f12036c0a70500ae94f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a813dc12de9535f12036c0a70500ae94f">&#9670;&nbsp;</a></span>print_posizioni_pedine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_posizioni_pedine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione ausiliaria che stampa la posizione delle pedine di una squadra </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra</td><td>- Puntatore all'array della squadra </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab512f532a1f0edce2a9d32463144bc3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab512f532a1f0edce2a9d32463144bc3c">&#9670;&nbsp;</a></span>printer_che()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printer_che </td>
+          <td>(</td>
+          <td class="paramtype">char(*)&#160;</td>
+          <td class="paramname"><em>chessboard</em>[N_ELEMENT], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>c2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>znl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione che si occupa di gestire la visualizzazione a schermo della scacchiera </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboard</td><td>- Puntatore all'array bi-dimensionale della scacchiera </td></tr>
+    <tr><td class="paramname">row</td><td>- Numero righe </td></tr>
+    <tr><td class="paramname">col</td><td>- Numero colonne </td></tr>
+    <tr><td class="paramname">length</td><td>- Larghezza di visualizzazione della pedina </td></tr>
+    <tr><td class="paramname">offset_v</td><td>- Distanza schermo dall'alto al basso </td></tr>
+    <tr><td class="paramname">offset_o</td><td>- Distanza schermo da sinistra a destra </td></tr>
+    <tr><td class="paramname">c1</td><td>- Pedina squadra 1 </td></tr>
+    <tr><td class="paramname">c2</td><td>- Pedina squadra 2 </td></tr>
+    <tr><td class="paramname">znl</td><td>- Zona non legale della scacchiera </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2f393d55b95a71a841325a617594a85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f393d55b95a71a841325a617594a85d">&#9670;&nbsp;</a></span>printer_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printer_color </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione ausiliaria che stampa un simbolo (string) del colore scelto (color) </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>- Simbolo da stampare </td></tr>
+    <tr><td class="paramname">color</td><td>- Colore di stampa </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af9cf609c7375465658073feeb96a7940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cf609c7375465658073feeb96a7940">&#9670;&nbsp;</a></span>promossa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void promossa </td>
+          <td>(</td>
+          <td class="paramtype">char(*)&#160;</td>
+          <td class="paramname"><em>chessboard</em>[N_ELEMENT], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>turno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>mossa_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>mossa_x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Si occupa di promuovere la pedina, possibile quindi muoversi in tutte le direzioni </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboard</td><td>- Puntatore all'array bi-dimensionale della scacchiera </td></tr>
+    <tr><td class="paramname">squadra</td><td>- Lista delle pedine della squadra </td></tr>
+    <tr><td class="paramname">turno</td><td>- Turno attuale </td></tr>
+    <tr><td class="paramname">mossa_y</td><td>- Coordinata y della mossa </td></tr>
+    <tr><td class="paramname">mossa_x</td><td>- Coordinata x della mossa </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af857f5ae71f2377599fe8e4feb270c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af857f5ae71f2377599fe8e4feb270c4c">&#9670;&nbsp;</a></span>riga_vuota()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void riga_vuota </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scrive una riga vuota </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">len</td><td>- Lunghezza riga, numero di caratteri vuoti </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aab955d76e013f57b4217045bb1d70bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab955d76e013f57b4217045bb1d70bed">&#9670;&nbsp;</a></span>scegli_colore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scegli_colore </td>
+          <td>(</td>
+          <td class="paramtype">short int *&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_o</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione stampa messaggi domanda/risposta modificando il contenuto della variabile colore </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>- Puntatore alla variabile colore </td></tr>
+    <tr><td class="paramname">offset_o</td><td>- Offset orizziontale di stampa </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92a34221d71cdc6253edb29b841d265d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a34221d71cdc6253edb29b841d265d">&#9670;&nbsp;</a></span>scegli_impostazioni()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scegli_impostazioni </td>
+          <td>(</td>
+          <td class="paramtype">short int *&#160;</td>
+          <td class="paramname"><em>s1_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int *&#160;</td>
+          <td class="paramname"><em>s2_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int *&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_o</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione stampa messaggi domanda/risposta per definire le impostazioni di gioco </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1_color</td><td>- Puntatore del colore della squadra1 </td></tr>
+    <tr><td class="paramname">s2_color</td><td>- Puntatore del colore della squadra2 </td></tr>
+    <tr><td class="paramname">len</td><td>- Puntatore della lunghezza della scacchiera </td></tr>
+    <tr><td class="paramname">offset_o</td><td>- Offset orizziontale di stampa </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9d6ea9ac33c0e0eddc97b91467b0009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d6ea9ac33c0e0eddc97b91467b0009">&#9670;&nbsp;</a></span>strategia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int strategia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>pedina</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione cerca la miglior mossa di una pedina </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">squadra</td><td>- Puntatore all'array della squadra. </td></tr>
+    <tr><td class="paramname">pedina</td><td>- Pedina i-esima dell'array squadra </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Restituisce una j-esima posizione dell'array del database della pedina </dd></dl>
+
+</div>
+</div>
+<a id="addfdfde58d6b31c48a01c50c30b854a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addfdfde58d6b31c48a01c50c30b854a9">&#9670;&nbsp;</a></span>tipo_gioco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int tipo_gioco </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>offset_o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione stampa messaggi domanda/risposta restituendo il tipo di gioco </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset_o</td><td>- Offset orizziontale di stampa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Restituisce il tipo di gioco </dd></dl>
+
+</div>
+</div>
+<a id="a9ddd9e1810ccfd6536ce8df130eb8258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ddd9e1810ccfd6536ce8df130eb8258">&#9670;&nbsp;</a></span>verifica_fine_gioco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int verifica_fine_gioco </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione che verifica se le pedina di una squadra non hanno mosse legali a disposizioen </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>- Mosse possibili squadra1 </td></tr>
+    <tr><td class="paramname">b</td><td>- Mosse possibili squadra2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- 1 se gioco finito, altrimenti 0 </dd></dl>
+
+</div>
+</div>
+<a id="aa486d7983876dee87f8be6050210e1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa486d7983876dee87f8be6050210e1b8">&#9670;&nbsp;</a></span>verifica_mosse_possibili()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void verifica_mosse_possibili </td>
+          <td>(</td>
+          <td class="paramtype">char(*)&#160;</td>
+          <td class="paramname"><em>chessboard</em>[N_ELEMENT], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a9ab3eaadbff1245731adcc445a96a384">ped_t</a> *&#160;</td>
+          <td class="paramname"><em>squadra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>pedina</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>turno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La funzione popola l'array database di una pedina </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboard</td><td>- Puntatore all'array bi-dimensionale della scacchiera </td></tr>
+    <tr><td class="paramname">squadra</td><td>- Puntatore all'array della squadra. </td></tr>
+    <tr><td class="paramname">pedina</td><td>- Pedina i-esima dell'array squadra </td></tr>
+    <tr><td class="paramname">turno</td><td>- Puntatore all'array turno </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab3c269ecd57bec5b29bad62867264c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c269ecd57bec5b29bad62867264c2b">&#9670;&nbsp;</a></span>verified_ped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int verified_ped </td>
+          <td>(</td>
+          <td class="paramtype">char(*)&#160;</td>
+          <td class="paramname"><em>chessboard</em>[N_ELEMENT], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="laska_8h.html#a0b1b32728682649459c7d864cd8fc5f3">coord_t</a>&#160;</td>
+          <td class="paramname"><em>pedina</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>turno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Verifica qual è la sottocasella più in alto della pedina </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chessboard</td><td>- Puntatore all'array bi-dimensionale della scacchiera </td></tr>
+    <tr><td class="paramname">pedina</td><td>- Area che contiene le sottocaselle </td></tr>
+    <tr><td class="paramname">turno</td><td>- Giocatore che muove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Altezza pedina </dd></dl>
+
+</div>
+</div>
+<a id="a450e37c9e4098c264dd651395c65b594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450e37c9e4098c264dd651395c65b594">&#9670;&nbsp;</a></span>verso()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int verso </td>
+          <td>(</td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>pedina_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>mossa_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indica se la mossa viene eseguita verso l'alto o verso il basso </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pedina_y</td><td>- Altezza pedina </td></tr>
+    <tr><td class="paramname">mossa_y</td><td>- Altezza mossa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>- Direzione mossa (1:verso l'alto, -1: verso il basso) </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle variabili</h2>
+<a id="a9e332dad3a120577254a2bd387c0cae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e332dad3a120577254a2bd387c0cae4">&#9670;&nbsp;</a></span>down</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char down[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Simboli promossi e non, squadra inferiore </p>
+
+</div>
+</div>
+<a id="ad7ef93b79eab76769d5689c50f2d0d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ef93b79eab76769d5689c50f2d0d65">&#9670;&nbsp;</a></span>EMPTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char EMPTY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carattere vuoto (' ') - Spazio legale della scacchiera dove si possono posizionare le pedine </p>
+
+</div>
+</div>
+<a id="a23a8e01adeded40ada5ec6e876efb3a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a8e01adeded40ada5ec6e876efb3a8">&#9670;&nbsp;</a></span>Frase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* Frase[5]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Array di frasi che commentano la mossa dell'utente </p>
+
+</div>
+</div>
+<a id="a3b50f50f22c52966760db7ab5af1258d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b50f50f22c52966760db7ab5af1258d">&#9670;&nbsp;</a></span>mosse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int mosse[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Distanze possibili delle pedine </p>
+
+</div>
+</div>
+<a id="ae86a3bc7193a0b4b19151fb15b9b8e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86a3bc7193a0b4b19151fb15b9b8e5f">&#9670;&nbsp;</a></span>OUTCAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char OUTCAST</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carattere (\270) - Area non legale della scacchiera </p>
+
+</div>
+</div>
+<a id="a7f296bdce4aa372c96bd6c13c115b013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f296bdce4aa372c96bd6c13c115b013">&#9670;&nbsp;</a></span>up</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char up[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Simboli promossi e non, squadra superiore </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+</small></address>
+</body>
+</html>
